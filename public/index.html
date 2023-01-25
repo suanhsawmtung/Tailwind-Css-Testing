@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -18,24 +18,26 @@
 <body class="bg-travel m-0 p-0 box-border">
 
     <!-- Top Nav Bar -->
-    <nav class="flex justify-between items-center px-4 sm:px-10 py-5 fixed w-screen top-0 left-0 z-10">
+    <nav class="flex justify-between items-start md:items-center px-4 sm:px-10 py-5 fixed w-screen top-0 left-0 z-10 " id="nav-bar">
 
         <!-- Title -->
         <h1 class="text-3xl font-bold text-white">Travel</h1>
 
         <!-- Nav Items Box -->
-        <ul class="flex justify-center items-center" id="search">
+        <ul class="flex flex-col md:flex-row justify-center items-start md:items-center" id="search">
 
             <!-- Nav Items -->
-            <li class="px-5 text-white font-normal block md:hidden"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="px-5 text-white font-normal block md:hidden" id="burger"><i class="fa-solid fa-bars"></i></li>
 
-            <li class="px-5 text-white font-normal hidden md:block"><a href="#home">Home</a></li>
+            <li class="px-5 text-white font-normal hidden" id="cross"><i class="fa-solid fa-xmark"></i></li>
 
-            <li class="px-5 text-white font-normal hidden md:block"><a href="#explore">Explore</a></li>
+            <li class="px-5 text-white font-normal hidden md:block" id="nav"><a href="#home">Home</a></li>
 
-            <li class="px-5 text-white font-normal hidden md:block"><a href="#journal">Journal</a></li>
+            <li class="px-5 text-white font-normal hidden md:block" id="nav"><a href="#explore">Explore</a></li>
 
-            <li class="px-5 text-white font-normal hidden md:block"><a href="#contact">Contact</a></li>
+            <li class="px-5 text-white font-normal hidden md:block" id="nav"><a href="#journal">Journal</a></li>
+
+            <li class="px-5 text-white font-normal hidden md:block" id="nav"><a href="#contact">Contact</a></li>
             <!-- Nav Items End -->
 
         </ul>
@@ -273,6 +275,8 @@
 
     </footer>
     <!-- Footer End -->
+
+    <script src="script.js"></script>
 
 </body>
 
