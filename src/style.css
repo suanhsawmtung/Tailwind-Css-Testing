@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .card {
-    @apply rounded-lg shadow-lg overflow-hidden w-80 h-96 relative cursor-pointer;
+    @apply rounded-lg shadow-lg overflow-hidden w-64 h-90 relative cursor-pointer;
 }
 
 .card-title {
@@ -10,7 +10,7 @@
 }
 
 .card-2 {
-    @apply rounded-lg shadow-xl overflow-hidden w-96 h-96 relative cursor-pointer text-center
+    @apply rounded-lg shadow-xl overflow-hidden w-90 h-96 relative cursor-pointer text-center
 }
 
 .icon {
